@@ -1,0 +1,25 @@
+{
+  "name": "profile-api-playground",
+  "type": "web",
+  "env": "node",
+  "plan": "free",
+  "region": "ohio",
+  "branch": "main",
+  "buildCommand": "cd backend && npm install",
+  "startCommand": "cd backend && npm start",
+  "healthCheckPath": "/health",
+  "envVars": [
+    {
+      "key": "NODE_ENV",
+      "value": "production"
+    },
+    {
+      "key": "PORT",
+      "value": "10000"
+    },
+    {
+      "key": "CORS_ORIGIN",
+      "value": "https://profile-playground.vercel.app"
+    }
+  ]
+}

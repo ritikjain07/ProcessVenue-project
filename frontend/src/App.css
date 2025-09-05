@@ -1,0 +1,153 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+.app-header h1 {
+  margin-bottom: 1rem;
+}
+
+.app-header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.app-header nav a {
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.app-header nav a:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.app-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.app-footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+/* Card styles */
+.card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-header {
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #1d4e70;
+}
+
+/* Grid layouts */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Project card styles */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card-body {
+  flex: 1;
+}
+
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+/* Loading and error states */
+.loading {
+  text-align: center;
+  padding: 2rem;
+}
+
+.error {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
